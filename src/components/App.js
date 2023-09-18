@@ -20,7 +20,7 @@ const App = () => {
     }
 
     return(
-        <div className="main">
+        <div id="main">
             <div className="todo">
                 <h1>My todos</h1>
                 {
@@ -28,18 +28,18 @@ const App = () => {
                         return element
                     })
                 }
-                <button onClick={addNewTodo}>Add Todo</button>
+                <button id='add-todo-btn' onClick={addNewTodo}>Add Todo</button>
             </div>
             <div className="count">
                 <hr/>
                 <span>count: {count}</span>
-                <button onClick={() => setCount(count + 1)}>+</button>
+                <button id = 'incr-cnt' onClick={() => setCount(count + 1)}>+</button>
                 <h1>Expensive Calculation</h1>
                 <p>1000000000</p>
                 <hr/>
             </div>
             <div className="memo">
-                <input type="text" onChange={(e) => setSkill(e.target.value)}/>
+                <input type="text" id = 'skill-input' onChange={(e) => setSkill(e.target.value)}/>
                 <button onClick={addSkills}>Add Skill</button>
                 <ul>
                     {
