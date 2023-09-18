@@ -13,10 +13,10 @@ const App = () => {
     }
 
     const addSkills = () => {
-        if(skill.length > 5){
+        // if(skill.length > 5){
             const skillsList = [...skills,<li id={`skill-${skills.length}`}>{skill}</li>]
             setSkills(skillsList)
-        }
+        // }
     }
 
     return(
