@@ -21,6 +21,7 @@ const App = () => {
 
     return(
         <div id="main">
+            <h1>Recat.useMemo</h1>
             <div className="todo">
                 <h1>My todos</h1>
                 {
@@ -38,10 +39,12 @@ const App = () => {
                 <p>1000000000</p>
                 <hr/>
             </div>
+            <hr/>
+            <h1>React.memo</h1>
             <div className="memo">
                 <input type="text" id = 'skill-input' onChange={(e) => setSkill(e.target.value)}/>
                 <button id = 'skill-btn' onClick={addSkills}>Add Skill</button>
-                <ul>
+                <ul id="item-jumbotron">
                     {
                         skills.map((element) => {
                             return element
