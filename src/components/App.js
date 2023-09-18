@@ -33,7 +33,7 @@ const App = () => {
             </div>
             <div className="count">
                 <hr/>
-                <span>count: {count}</span>
+                <span>Count: {count}</span>
                 <button id = 'incr-cnt' onClick={() => setCount(count + 1)}>+</button>
                 <h1>Expensive Calculation</h1>
                 <p>1000000000</p>
