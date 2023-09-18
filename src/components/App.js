@@ -8,13 +8,13 @@ const App = () => {
     const [skill,setSkill] = useState("")
 
     const addNewTodo = () => {
-        const todoList = [...newTodo,<p>New Todo</p>]
+        const todoList = [...newTodo,<p id={`todo-${newTodo.length}`}>New Todo</p>]
         setNewTodo(todoList)
     }
 
     const addSkills = () => {
         if(skill.length > 5){
-            const skillsList = [...skills,<li>{skill}</li>]
+            const skillsList = [...skills,<li id={`skill-${skills.length}`}>{skill}</li>]
             setSkills(skillsList)
         }
     }
@@ -40,7 +40,7 @@ const App = () => {
             </div>
             <div className="memo">
                 <input type="text" id = 'skill-input' onChange={(e) => setSkill(e.target.value)}/>
-                <button onClick={addSkills}>Add Skill</button>
+                <button id = 'skill-btn' onClick={addSkills}>Add Skill</button>
                 <ul>
                     {
                         skills.map((element) => {
