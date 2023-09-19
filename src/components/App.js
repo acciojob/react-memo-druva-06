@@ -13,10 +13,8 @@ const App = () => {
     }
 
     const addSkills = () => {
-        // if(skill.length > 5){
-            const skillsList = [...skills,<li id={`skill-${skills.length}`}>{skill}</li>]
-            setSkills(skillsList)
-        // }
+        const skillsList = [...skills,<li id={`skill-${skills.length}`}>{skill}</li>]
+        setSkills(skillsList)
     }
 
     return(
@@ -34,7 +32,7 @@ const App = () => {
             <div className="count">
                 <hr/>
                 <span>Count: {count}</span>
-                <button id = 'incr-cnt' onClick={() => setCount(count + 1)}>+</button>
+                <button id = 'incr-cnt' onClick={() => setCount(count + 1)}>0</button>
                 <h1>Expensive Calculation</h1>
                 <p>1000000000</p>
                 <hr/>
